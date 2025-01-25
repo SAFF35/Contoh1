@@ -3,47 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontainer</title>
+    <title>Kontainer Elips dan Kotak</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
         }
 
-        /* Kontainer Segi Enam */
-        .hex-container {
-            width: 200px;
-            height: 115px;
+        /* Kontainer Elips */
+        .ellipse-container {
+            width: 300px;
+            height: 150px;
             background-color: #4CAF50;
             color: white;
-            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%; /* Membentuk elips */
             text-align: center;
             margin-bottom: 20px;
         }
 
-        .hex-container:before, .hex-container:after {
-            content: '';
-            position: absolute;
-            width: 0;
-            border-left: 100px solid transparent;
-            border-right: 100px solid transparent;
-        }
-
-        .hex-container:before {
-            bottom: 100%;
-            border-bottom: 57.5px solid #4CAF50;
-        }
-
-        .hex-container:after {
-            top: 100%;
-            border-top: 57.5px solid #4CAF50;
-        }
-
-        .hex-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        .ellipse-container h2 {
+            margin: 0;
         }
 
         /* Kontainer Kotak */
@@ -67,9 +49,9 @@
     </style>
 </head>
 <body>
-    <!-- Kontainer Segi Enam -->
-    <div class="hex-container">
-        <div class="hex-content">
+    <!-- Kontainer Elips -->
+    <div class="ellipse-container">
+        <div>
             <h2>Binatang</h2>
             <p>Burung adalah makhluk hidup yang memiliki bulu dan sayap.</p>
         </div>
